@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #7f1e4a;
+}
+
+.header-container{
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    align-items: center;
+    background-color: #fff0f6;
+    height: 100px
+
+}
+.logo{
+    float: left;
+    height: 100px;
+    margin-left: 10px;
+}
+.logo img{
+    height: 100px;
+    width: 150px;
+}
+h1 {
+    margin-bottom: 50px;
+    margin-top: 20px;
+    text-align: center;
+
+}
+.section-content{
+    margin-top: 40px;
+    text-align: center;
+    color: #7f1e4a;
+}
+
+.main-content{
+    padding: 10px;
+    background-color: #fff0f6;
+    min-height: 80vh;
+    color:  #7f1e4a;
+
+
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #eecedb;
+    color:  #7f1e4a;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.carousel-item img {
+   width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.7);
+}
+.carousel-item{
+    width: 100%;
+    height: 500px; 
+}
+.carousel{
+    margin-bottom: 40px;
+    width: 100%;
+    height: 500px;
+    margin-left: auto; 
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px;
+
+}
+.carousel-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 50%, rgba(0,0,0,0.7) 100%);
+  z-index: 1;
+}
+
+.carousel-caption {
+  z-index: 2;
+}
+.carousel-control-prev {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0001));
+}
+
+.carousel-control-next {
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0001));
+}
+.produtos_cards {
+    align-items: center;
+    max-width: 1400px;
+    height: auto;
+    margin-bottom: 50px;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.produto_imagem{
+    width: 100%;
+    height: 200px;
+}
+
+.produto_card_inner {
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+    border: 2px solid #df95d2;
+    border-radius: 10px;
+    background-color: #b359a3;
+    height: 400px;
+    width: 290px;
+    position: relative;
+}
