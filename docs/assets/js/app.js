@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <img src="${produto.imagem}" alt="${produto.nome}" class="produto_imagem">
                 <h3 class="produto_nome">${produto.nome}</h3>
                 <p class="produto_descricao">${produto.descricao}</p>
-                <button class="detalhes_botao">Detalhes</button>
+                <button class="produtos_botao">Visualizar produtos</button>
             </div>
             `;
             produtosContainer.appendChild(card);

@@ -1,22 +1,19 @@
 {
     "cards": [
         {
-            "nome": "Ovo recheado",
-            "descricao": "Delicioso brigadeiro tradicional.",
-            "preco": "R$ 3,00",
+            "nome": "Ovos recheados",
+            "descricao": "Ovos artesanais recheados de cremosidade para comer de colher.",
             "imagem": "assets/imgs/ovo_recheado.jpeg"
         },
         {
-            "nome": "Beijinho",
-            "descricao": "Doce de coco com cobertura de açúcar.",
-            "preco": "R$ 3,00",
-            "imagem": "assets/imgs/beijinho.jpg"
+            "nome": "Bolos de pote",
+            "descricao": "Deliciosos bolos de pote, praticidade e sabor artesanal para adoçar o seu dia.",
+            "imagem": "assets/imgs/bolo_pote.jpeg"
         },
         {
-            "nome": "Cajuzinho",
-            "descricao": "Doce de amendoim com cobertura de chocolate.",
-            "preco": "R$ 3,00",
-            "imagem": "assets/imgs/cajuzinho.jpg"
+            "nome": "Bolos sob encomenda",
+            "descricao": "Bolos personalizados que transformam suas celerações em momentos doces",
+            "imagem": "assets/imgs/bolo_aniversarioCasamento.jpeg"
         }
     ]
 }
