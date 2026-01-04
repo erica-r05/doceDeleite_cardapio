@@ -12,15 +12,15 @@
 
 ---
 
-## Versões do projeto
---
+### Versões do projeto
+
 ## Branch main-localStorage-version
-### Versão estática hospedada no GitHub Pages.
-### Persistência de dados via LocalStorage.
---
+- Versão estática hospedada no GitHub Pages.
+- Persistência de dados via LocalStorage.
+
 ## Branch json-server-version
-### Versão com backend simulado utilizando JSON Server.
-### Utilizada para desenvolvimento e aprendizado de API REST.
+- Versão com backend simulado utilizando JSON Server.
+- Utilizada para desenvolvimento e aprendizado de API REST.
 
 ---
 
