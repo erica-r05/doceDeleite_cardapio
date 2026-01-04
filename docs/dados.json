@@ -14,6 +14,12 @@
             "nome": "Bolos sob encomenda",
             "descricao": "Bolos personalizados que transformam suas celerações em momentos doces",
             "imagem": "assets/imgs/bolo_aniversarioCasamento.jpeg"
+        },
+        {
+            "nome": "Sobremesas",
+            "descricao": "Bolos personalizados que transformam suas celerações em momentos doces",
+            "imagem": "assets/imgs/bolo_aniversarioCasamento.jpeg"
         }
+
     ]
 }
