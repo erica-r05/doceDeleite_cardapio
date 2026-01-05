@@ -40,6 +40,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 <button class="produtos_botao">Visualizar produtos</button>
             </div>
             `;
+            const botao = card.querySelector('.produtos_botao');
+            botao.addEventListener('click', () => {
+                window.location.href = "produtos.html";
+            });
             produtosContainer.appendChild(card);
         });
     }
@@ -48,3 +52,4 @@ document.addEventListener('DOMContentLoaded', () => {
     carouselControls();
     // Add your code here
 });
+
