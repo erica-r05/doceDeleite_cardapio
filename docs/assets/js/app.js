@@ -11,13 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
      carregarCardsProdutos();
      carregarCardapio();
-
-
-    
-
-    
 });
-
 async function carregarCardsProdutos() {
         const resposta = await fetch('dados.json');
         const bancoDados = await resposta.json();
@@ -113,22 +107,6 @@ async function carregarCardapio() { //carrega o filtro e o cardapio
             container.appendChild(secao);
         });
     }
-    // WhatsApp 
-    document.addEventListener("click", event => {
-        const botao = event.target.closest(".btn-wpp");
-        if (!botao) return;
-
-        event.preventDefault();
-
-        const telefone = "5531997982551";
-        const produto = botao.dataset.produto;
-        const mensagem = `Oi! Gostaria de pedir o produto: ${produto} 🍰`;
-
-        window.open(
-            `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`,
-            "_blank"
-        );
-    });
 }
    
 
