@@ -6,58 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doce Deleite - Cardápio</title>
     <link rel="stylesheet" href="assets/css/style.css">
-     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
-    <main class="main-content">
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/imgs/bolo_aniversario.jpeg" alt="First slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2 class="display-4 fw-bold">Doce Deleite</h2>
-                        <p class="fs-4">A doçura que o seu dia merece: doces artesanais feitos com amor</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/imgs/bolos_casamento.jpeg" alt="Second slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2 class="display-4 fw-bold">Doce Deleite</h2>
-                        <p class="fs-4">Momentos especiais merecem um toque de doçura</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="assets/imgs/bolo_normal.jpeg" alt="Third slide">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h2 class="display-4 fw-bold">Doce Deleite</h2>
-                        <p class="fs-4">Descubra nossos doces artesanais abaixo</p>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            </a>
+<body class="conteudo">
+    <header>
+        <div class="header-content">
+            <h1 class="logo">Doce Deleite</h1>
+            <nav class="acoes">
+                <a href="cardapio.html">Cardapio</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
         </div>
-        <section class="section-content">
-            <h2>Produtos</h2>
-            <div class="produtos_cards">
-                <!-- Cards de produtos serão inseridos aqui dinamicamente -->
+    </header>
+    <main class="main-content">
+        <section class="banner">
+            <div class="banner-overlay">
+                <h1>Doce Deleite</h1>
+                <p>Doces artesanais feitos com amor para momentos especiais</p>
+                <a href="cardapio.html" class="btn-banner">Ver cardápio</a>
             </div>
         </section>
+        <h2 class="titulos">Top categorias</h2>
+        <div class="produtos_cards">
+                <!-- Cards de produtos serão inseridos aqui dinamicamente -->
+        </div>
+        <h3 class="titulos">Top mais vendidos</h2>
+        <div class="mais_vendidos">
+            <!-- Cards de produtos serão inseridos aqui dinamicamente -->
+        </div>
     </main>
-
+    <script src="assets/js/app.js" defer></script>
     <footer>
         <p class="footer-frase">&copy; 2024 Doce Deleite. Todos os direitos reservados.</p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="assets/js/app.js" defer></script>
 </body>
 
 </html>
