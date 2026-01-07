@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
      carregarCardsProdutos();
      carregarCardapio();
 });
-async function carregarCardsProdutos() {
+async function carregarCardsProdutos() { /*função para carregar os cards das categorias*/
         const resposta = await fetch('dados.json');
         const bancoDados = await resposta.json();
         const produtos = bancoDados.cards;
@@ -45,6 +45,7 @@ async function carregarCardsProdutos() {
           <img src="${produto.imagem}" alt="${produto.nome}" class="produto_imagem">
           <h3 class="produto_nome">${produto.nome}</h3>
           <p class="produto_descricao">${produto.descricao}</p>
+          <span class="preco">R$ ${produto.preco}</span>
           <a href="#" class="btn-wpp" data-produto="${produto.nome}">
             Pedir pelo WhatsApp
           </a>
@@ -65,13 +66,13 @@ async function carregarCardapio() { //carrega o filtro e o cardapio
     // Função para criar o card
     const criarCard = produto => `
     <div class="produto_card">
-      <img src="${produto.imagem}" alt="${produto.nome}">
-      <h3>${produto.nome}</h3>
-      <p>${produto.descricao}</p>
-      <span class="preco">R$ ${produto.preco}</span>
-      <a href="#" class="btn-wpp" data-produto="${produto.nome}">
-        Pedir pelo WhatsApp
-      </a>
+      <img src="${produto.imagem}" alt="${produto.nome}" class="produto_imagem">
+          <h3 class="produto_nome">${produto.nome}</h3>
+          <p class="produto_descricao">${produto.descricao}</p>
+          <span class="preco">R$ ${produto.preco}</span>
+          <a href="#" class="btn-wpp" data-produto="${produto.nome}">
+            Pedir pelo WhatsApp
+          </a>
     </div>
   `;
 
