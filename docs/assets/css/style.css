@@ -215,9 +215,13 @@ footer {
   color: #6b3a3a;
   background: #fff5f7;        
   border-top: 1px solid #ffd6e0;
-  height: 80px;
+  height: 85px;
   font-weight: bold;
 }
+footer a{
+  color: #ca67a7;
+}
 footer p{
-    margin-top:25px;
+    margin-top:15px;
+
 }

@@ -1,0 +1,92 @@
+/* reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f7c1cc, #fbe7ec);
+}
+
+/* container do formulário */
+form {
+  background: #fff;
+  padding: 32px;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* título */
+form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* inputs */
+form input {
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  outline: none;
+  transition: border-color .3s, box-shadow .3s;
+}
+
+form input::placeholder {
+  color: #aaa;
+}
+
+/* foco */
+form input:focus {
+  border-color: #e26a8d;
+  box-shadow: 0 0 0 2px rgba(226,106,141,.2);
+}
+
+/* botão principal */
+form button[type="submit"] {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #e26a8d;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .3s, transform .2s;
+}
+
+form button[type="submit"]:hover {
+  background: #d45579;
+  transform: translateY(-2px);
+}
+
+/* botão secundário (cadastro) */
+button.cadastro {
+  margin-top: 12px;
+  background: transparent;
+  border: none;
+  color: #e26a8d;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* erro */
+#erro {
+  text-align: center;
+  font-size: 13px;
+  color: #e63946;
+}
