@@ -1,3 +1,14 @@
+const auth = localStorage.getItem("auth");
+
+if (!auth) {
+  window.location.href = "login.html";
+}
+document.getElementById("logout").addEventListener("click", () => {
+  localStorage.removeItem("auth");
+  window.location.href = "login.html";
+});
+
+//funções pra carregar a home administrativa
 let produtosCardapio = []
 let categoriaSelecionada = null
 //codigo js pra home
@@ -9,21 +20,10 @@ document.addEventListener('DOMContentLoaded', () => {
        buscarNoCardapio(e.target.value);
      });
     }
-
-   document.addEventListener("click", event => {   //leva o cliente para o chat do wpp
-        const botao = event.target.closest(".btn-wpp");
-        if (!botao) return;
-        event.preventDefault();
-        const telefone = "5531997982551";
-        const produto = botao.dataset.produto;
-        const mensagem = `Oi! Gostaria de pedir o produto: ${produto} `;
-        const url = `https://wa.me/${telefone}?text=${encodeURIComponent(mensagem)}`;
-        window.open(url, "_blank");
-    });
      carregarCardsProdutos();
 });
 async function carregarCardsProdutos() { /*função para carregar os cards das categorias*/
-        const resposta = await fetch('dados.json');
+        const resposta = await fetch("/docs/dados.json");
         const bancoDados = await resposta.json();
         const categorias = bancoDados.cards;
         const produtos = bancoDados.cardapio_produtos;
@@ -39,7 +39,7 @@ async function carregarCardsProdutos() { /*função para carregar os cards das c
           <img src="${categorias.imagem}" alt="${categorias.nome}" class="produto_imagem">
           <h3 class="produto_nome">${categorias.nome}</h3>
           <p class="produto_descricao">${categorias.descricao}</p>
-          <a href="cardapio.html?categoria=${categorias.categoria}">
+          <a href="cardapioAdmin.html?categoria=${categorias.categoria}">
         Visualizar produtos
       </a>
         </div>
@@ -60,12 +60,11 @@ async function carregarCardsProdutos() { /*função para carregar os cards das c
           <h3 class="produto_nome">${produto.nome}</h3>
           <p class="produto_descricao">${produto.descricao}</p>
           <span class="preco">R$ ${produto.preco}</span>
-          <a href="#" class="btn-wpp" data-produto="${produto.nome}">
-            Pedir pelo WhatsApp
-          </a>
         </div>
       `;
             maisVendidosContainer.appendChild(card);
         });
     }
+
+
 

@@ -225,3 +225,30 @@ footer p{
     margin-top:15px;
 
 }
+
+/*formatação dos detalhes adicionais da area administrativa*/
+.logout{
+  background: none;
+  border: none;
+  margin-left: 1rem;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  position: relative;
+}
+.logout::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #c27caa;
+  transition: 0.3s;
+  
+}
+
+.logout:hover::after {
+  width: 100%;
+}
+
