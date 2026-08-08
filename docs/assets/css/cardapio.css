@@ -22,6 +22,8 @@ header {
   align-items: center;
   justify-content: space-between;
   color: #5a2e2e;
+  border-bottom: 2px solid #ecbac6;
+  padding-bottom: 40px;
 }
 
 .logo{
@@ -76,7 +78,7 @@ header {
 }
 
 .categoria_secao {
-  margin-bottom: 50px;
+  margin-bottom: 72px;
 }
 
 .categoria_secao h2 {
@@ -92,8 +94,8 @@ header {
 .produtos_cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  justify-content: start;
+  gap: 24px;
+  justify-content: center;
   align-items: stretch;
 }
 
@@ -104,8 +106,8 @@ header {
     border: none;
     border-radius: 10px;
     background-color:#f8dbe1;
-    height: 410px;
-    width: 310px;
+    height: 400px;
+    width: 300px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -179,38 +181,35 @@ header {
 }
 
 /*fromatação da area adm*/
-.admin-actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px 32px;
-}
-
-.btn-add{
-  background: none;
+.admin-main .btn-add {
+  display: block;
+  margin: 0 0 24px 20px;
+  padding: 10px 16px;
+  background: #ca67a7;
   border: none;
-  text-decoration: none;
-   color: #6b3a3a;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
   font-weight: 600;
-  position: relative;
-  font-size: larger;
-  margin-right: 50px;
-}
-.btn-add::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #c27caa;
-  transition: 0.3s;
-  
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.btn-add:hover::after {
-  width: 100%;
+.admin-main .btn-add:hover {
+  background: #b85c97;
+  transform: translateY(-1px);
 }
+
+.admin-main .btn-add:focus-visible {
+  outline: 3px solid rgba(202, 103, 167, 0.35);
+  outline-offset: 3px;
+}
+
+.admin-main .produtos_container {
+  padding-top: 32px;
+}
+
 .card-menu {
   position: absolute;
   top: 10px;
@@ -277,6 +276,13 @@ header {
 }
 .hidden{
   display: none;
+}
+
+.form-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(56, 12, 7, 0.38);
+  z-index: 1999;
 }
 
 .form-produto {

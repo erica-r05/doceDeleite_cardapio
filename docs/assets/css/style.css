@@ -69,7 +69,7 @@ header {
 }
 /*formatação do banner*/
 .banner { 
-  height: 90vh;
+  height: 70vh;
   background-image:
     linear-gradient(
       #0702048e,
@@ -100,7 +100,7 @@ header {
 }
 
 .btn-banner {
-  background:#f7b7c4;
+  background:#ecbac6;
   padding: 0.8rem 2rem;
   border-radius: 30px;
   color: #4a2c2a;
@@ -109,7 +109,10 @@ header {
 }
 /*formatação dos cards*/
 .titulos{
-  margin-top: 20px;
+  margin-top: 40px;
+  font-size: x-large;
+  padding: 20px;
+  border-bottom: 2px solid #ecbac6;
 }
 .produtos_cards {
     align-items: center;
@@ -141,7 +144,7 @@ header {
     width: 100%;
     height: 200px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .produto_card_inner {
@@ -149,10 +152,10 @@ header {
     gap: 15px;
     padding: 2px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color:#f8dbe1;
-    height: 410px;
-    width: 310px;
+    height: 400px;
+    width: 300px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -214,7 +217,7 @@ footer {
   font-size: 0.85rem;       
   color: #6b3a3a;
   background: #fff5f7;        
-  border-top: 1px solid #ffd6e0;
+  border-top: 2px solid #ecbac6;
   height: 85px;
   font-weight: bold;
 }

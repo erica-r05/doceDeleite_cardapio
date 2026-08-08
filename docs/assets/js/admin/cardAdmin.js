@@ -12,9 +12,11 @@ document.addEventListener("DOMContentLoaded", () => {
 function ativarBotaoAdd() {
   const botaoAdd = document.getElementById("btn-add");
   const form = document.getElementById("form-produto");
+  const overlay = document.getElementById("form-overlay");
   if (!botaoAdd || !form) return;
   botaoAdd.addEventListener("click", () => {
     form.classList.remove("hidden");
+    overlay?.classList.remove("hidden");
   });
 }
 //funções do localStorage
@@ -59,8 +61,10 @@ function ativarFormProduto() {
 function fecharFormulario() {
   idEmEdicao = null;
   const form = document.getElementById("form-produto");
+  const overlay = document.getElementById("form-overlay");
   form.reset();
   form.classList.add("hidden");
+  overlay?.classList.add("hidden");
   document.querySelector(".form-produto h3").innerText = "Novo produto";
   document.querySelector(".form-produto button[type='submit']").innerText = "Salvar";
 }
@@ -97,6 +101,7 @@ function abrirFormularioEdicao(id) {
   document.querySelector(".form-produto h3").innerText = "Editar produto";
   document.querySelector(".form-produto button[type='submit']").innerText = "Salvar alterações";
   document.getElementById("form-produto").classList.remove("hidden");
+  document.getElementById("form-overlay")?.classList.remove("hidden");
 }
 //caarrega o cardapio
 async function carregarCardapio() {

@@ -22,10 +22,9 @@
 
         </div>
     </header>
-    <main class="main-content">
-        <div class="admin-actions">
-            <button class="btn-add" id="btn-add">+ Adicionar produto</button>
-        </div>
+    <main class="main-content admin-main">
+        <button class="btn-add" id="btn-add" type="button">+ Adicionar produto</button>
+        <div id="form-overlay" class="form-overlay hidden"></div>
         <form id="form-produto" class="form-produto hidden">
             <h3>Novo produto</h3>
 
@@ -48,8 +47,10 @@
         </form>
         <div class="produtos_container"></div>
     </main>
-</body>
-<script src="/docs/assets/js/admin/cardAdmin.js" defer></script>
+    <script src="/docs/assets/js/admin/cardAdmin.js" defer></script>
 <script src="/docs/assets/js/admin/admin.js" defer></script>
-
+<footer>
+        <p class="footer-frase">&copy; 2024 Doce Deleite. Todos os direitos reservados.</p>
+</footer>
+</body>
 </html>
