@@ -8,7 +8,10 @@
 - HTML
 - CSS
 - JavaScript
-- JSON Server (ambiente local)
+- Java - springboot + maven para gerenciamento das dependencias -
+- MySQL para gerenciamento do banco de dados
+- Intellij e vscode para o desenvolvimento do codigo
+- Git e github para o versionamento e hospedagem do projeto
 
 ---
 
@@ -18,8 +21,8 @@
 - Versão estática hospedada no GitHub Pages.
 - Persistência de dados via LocalStorage.
 
-## Branch json-server-version
-- Versão com backend simulado utilizando JSON Server.
+## Branch java-server-version
+- Versão com backend real em Java springboot.
 - Utilizada para desenvolvimento e aprendizado de API REST.
 
 ---
@@ -28,4 +31,4 @@
 - Listagem de produtos por categoria
 - CRUD completo (admin)
 - Filtro por categoria
-- Persistência de dados via API REST simulada
+- Persistência de dados via API REST
