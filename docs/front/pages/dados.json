@@ -1,0 +1,137 @@
+{
+    "cards": [
+        {
+            "nome": "Ovos recheados",
+            "descricao": "Ovos artesanais recheados de cremosidade para comer de colher.",
+            "imagem": "/docs/front/assets/imgs/ovo/ovo_recheado.jpeg",
+            "categoria":"ovos"
+        },
+        {
+            "nome": "Bolos de pote",
+            "descricao": "Deliciosos bolos de pote, praticidade e sabor artesanal para adoçar o seu dia.",
+            "imagem": "/docs/front/assets/imgs/bolo_pote/bolo_pote.jpeg",
+            "categoria":"bolo De Pote"
+
+        },
+        {
+            "nome": "Bolos sob encomenda",
+            "descricao": "Bolos personalizados que transformam suas celerações em momentos doces",
+            "imagem": "/docs/front/assets/imgs/bolos_personalizados/bolo_aniversarioCasamento.jpeg",
+            "categoria":"bolo Sob Encomenda"
+
+        },
+        {
+            "nome": "Sobremesas",
+            "descricao": "Bolos personalizados que transformam suas celerações em momentos doces",
+            "imagem": "/docs/front/assets/imgs/bolos_personalizados/bolo_aniversarioCasamento.jpeg",
+            "categoria":"sobremesas"
+
+        }
+
+    ],
+    "populares": [1,2
+    ],
+    "cardapio_produtos": [
+        {
+            "id": 1,
+            "nome": "Ovo de colher chocolate",
+            "descricao": "Delicioso ovo de chocolate branco ao leite com brigadeiro e doce de leite ninho. ",
+            "imagem": "/docs/front/assets/imgs/ovo/ovo_pascoa_chocolateBranco_ninho.jpg",
+            "categoria": "ovos",
+            "preco": 45
+        },
+        {
+            "id": 2,
+            "nome": "Ovo de colher ferrero Rocher",
+            "descricao": "Delicioso ovo de chocolate ao leite com brigadeiro e Bombom Ferrero Rocher.",
+            "imagem": "/docs/front/assets/imgs/ovo/ovo_pascoa_ferreroRocher.jpg",
+            "categoria": "ovos",
+            "preco": 12
+        },
+        {
+            "id": 3,
+            "nome": "Ovo de colher ferrero Rocher",
+            "descricao": "Delicioso ovo de chocolate com recheio de ninho e Nutella",
+            "imagem": "/docs/front/assets/imgs/ovo/ovo_pascoa_ninhoNutella.jpg",
+            "categoria": "ovos",
+            "preco": 8
+        },
+        {
+            "id": 4,
+            "nome": "Ovo de colher de Brownie",
+            "descricao": "Delicioso ovo de chocolate com acabamento de Brownie.",
+            "imagem": "/docs/front/assets/imgs/ovo/ovo_pascoa_brownie.jpg",
+            "categoria": "ovos",
+            "preco": 250
+        },
+        {
+            "id": 5,
+            "nome": "Bolo de Pote de prestigio",
+            "descricao": "Delicioso bolo de pote com recheio de brigadeiro e coco para adoçar o seu cotidiano.",
+            "imagem": "/docs/front/assets/imgs/bolo_pote/bolo_pote.jpeg",
+            "categoria": "bolo De Pote",
+            "preco": 6
+        },
+        {
+            "id": 6,
+            "nome": "Bolo de Pote de prestigio",
+            "descricao": "Delicioso bolo de pote com recheio de brigadeiro e coco para adoçar o seu cotidiano.",
+            "imagem": "/docs/front/assets/imgs/bolo_pote/bolo_pote.jpeg",
+            "categoria": "bolo De Pote",
+            "preco": 6
+        },
+        {
+            "id": 7,
+            "nome": "Bolo de Pote de prestigio",
+            "descricao": "Delicioso bolo de pote com recheio de brigadeiro e coco para adoçar o seu cotidiano.",
+            "imagem": "/docs/front/assets/imgs/bolo_pote/bolo_pote.jpeg",
+            "categoria": "bolo De Pote",
+            "preco": 6
+        },
+        {
+            "id": 8,
+            "nome": "Bolo de Pote de prestigio",
+            "descricao": "Delicioso bolo de pote com recheio de brigadeiro e coco para adoçar o seu cotidiano.",
+            "imagem": "/docs/front/assets/imgs/bolo_pote/bolo_pote.jpeg",
+            "categoria": "bolo De Pote",
+            "preco": 6
+        },
+        {
+            "id": 9,
+            "nome": "Bolo de Morango com Ninho",
+            "descricao": "Delicioso bolo com recheio de morango e ninho, rende 20 pedaços.",
+            "imagem": "/docs/front/assets/imgs/bolos_personalizados/bolo_borboleta.jpg",
+            "categoria": "bolo Sob Encomenda",
+            "preco": 6
+        },
+        {
+            "id": 10,
+            "nome": "Bolo Branco",
+            "descricao": "Delicioso bolo com decoração branca com recheio de morango e ninho, rende 20 pedaços.",
+            "imagem": "/docs/front/assets/imgs/bolos_personalizados/bolo_branco.jpg",
+            "categoria": "bolo Sob Encomenda",
+            "preco": 6
+        },
+         {
+            "id": 11,
+            "nome": "Bolo Rosa e Branco",
+            "descricao": "Delicioso bolo com decoração branca com recheio de morango e ninho, rende 20 pedaços.",
+            "imagem": "/docs/front/assets/imgs/bolos_personalizados/bolo_rosa.jpg",
+            "categoria": "bolo Sob Encomenda",
+            "preco": 6
+        },
+         {
+            "id": 12,
+            "nome": "Bolo Rosa e Branco",
+            "descricao": "Delicioso bolo com decoração branca com recheio de morango e ninho, rende 20 pedaços.",
+            "imagem": "/docs/front/assets/imgs/bolos_personalizados/bolo_aniversarioCasamento.jpeg",
+            "categoria": "bolo Sob Encomenda",
+            "preco": 6
+        }
+
+
+        
+        
+]
+
+}
