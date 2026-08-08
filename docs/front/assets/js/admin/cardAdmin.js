@@ -107,7 +107,7 @@ function abrirFormularioEdicao(id) {
 async function carregarCardapio() {
   const params = new URLSearchParams(window.location.search);
   const categoriaSelecionada = params.get("categoria");
-  const resposta = await fetch("/docs/dados.json");
+  const resposta = await fetch("../dados.json");
   const bancoDados = await resposta.json();
   const produtosJson = bancoDados.cardapio_produtos.map(p => ({
     ...p,

@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
      carregarCardsProdutos();
 });
 async function carregarCardsProdutos() { /*função para carregar os cards das categorias*/
-        const resposta = await fetch("/docs/dados.json");
+        const resposta = await fetch("../dados.json");
         const bancoDados = await resposta.json();
         const categorias = bancoDados.cards;
         const produtos = bancoDados.cardapio_produtos;
