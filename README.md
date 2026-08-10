@@ -2,6 +2,10 @@
 
 ### Sistema de catálogo e gerenciamento de produtos para a confeitaria Doce Deleite.
 
+## Github Pages
+
+[Acesse aqui](https://erica-r05.github.io/doceDeleite_cardapio/)
+
 ---
 
 ## Tecnologias
