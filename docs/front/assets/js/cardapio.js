@@ -1,4 +1,6 @@
-const basePath = "../";
+function getBasePath() {
+  return window.location.pathname.includes("/pages/admin/") ? "../../" : "../";
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     carregarCardapio();
@@ -14,7 +16,7 @@ async function carregarCardapio() { //carrega o filtro e o cardapio
     // Função para criar o card
     const criarCard = produto => `
     <div class="produto_card">
-      <img src="${basePath}${produto.imagem}" alt="${produto.nome}" class="produto_imagem">
+      <img src="${getBasePath()}${produto.imagem}" alt="${produto.nome}" class="produto_imagem">
           <h3 class="produto_nome">${produto.nome}</h3>
           <p class="produto_descricao">${produto.descricao}</p>
           <span class="preco">R$ ${produto.preco}</span>

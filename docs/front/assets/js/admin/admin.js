@@ -1,3 +1,7 @@
+function getBasePath() {
+  return window.location.pathname.includes("/pages/admin/") ? "../../" : "../";
+}
+
 const auth = localStorage.getItem("auth");
 
 if (!auth) {
@@ -36,7 +40,7 @@ async function carregarCardsProdutos() { /*função para carregar os cards das c
             card.classList.add('produto_card');
             card.innerHTML = `
         <div class="produto_card_inner">
-          <img src="${categorias.imagem}" alt="${categorias.nome}" class="produto_imagem">
+          <img src="${getBasePath()}${categorias.imagem}" alt="${categorias.nome}" class="produto_imagem">
           <h3 class="produto_nome">${categorias.nome}</h3>
           <p class="produto_descricao">${categorias.descricao}</p>
           <a href="cardapioAdmin.html?categoria=${categorias.categoria}">
@@ -56,7 +60,7 @@ async function carregarCardsProdutos() { /*função para carregar os cards das c
             card.classList.add('mais_vendido');
             card.innerHTML = `
         <div class="produto_card_inner">
-          <img src="${produto.imagem}" alt="${produto.nome}" class="produto_imagem">
+          <img src="${getBasePath()}${produto.imagem}" alt="${produto.nome}" class="produto_imagem">
           <h3 class="produto_nome">${produto.nome}</h3>
           <p class="produto_descricao">${produto.descricao}</p>
           <span class="preco">R$ ${produto.preco}</span>
@@ -65,6 +69,3 @@ async function carregarCardsProdutos() { /*função para carregar os cards das c
             maisVendidosContainer.appendChild(card);
         });
     }
-
-
-
