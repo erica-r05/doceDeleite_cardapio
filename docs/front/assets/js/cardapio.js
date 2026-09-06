@@ -1,3 +1,5 @@
+const basePath = "../";
+
 document.addEventListener('DOMContentLoaded', () => {
     carregarCardapio();
 }); //carrega o cardapio da versão regular 
@@ -12,7 +14,7 @@ async function carregarCardapio() { //carrega o filtro e o cardapio
     // Função para criar o card
     const criarCard = produto => `
     <div class="produto_card">
-      <img src="${produto.imagem}" alt="${produto.nome}" class="produto_imagem">
+      <img src="${basePath}${produto.imagem}" alt="${produto.nome}" class="produto_imagem">
           <h3 class="produto_nome">${produto.nome}</h3>
           <p class="produto_descricao">${produto.descricao}</p>
           <span class="preco">R$ ${produto.preco}</span>

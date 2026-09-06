@@ -1,3 +1,5 @@
+const basePath = "../../";
+
 let idEmEdicao = null;
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -126,7 +128,7 @@ async function carregarCardapio() {
           <button class="delete-btn" type="button">Excluir</button>
         </div>
       </div>
-      <img src="${produto.imagem}" alt="${produto.nome}">
+      <img src="${basePath}${produto.imagem}" alt="${produto.nome}">
       <h3 class="produto_nome">${produto.nome}</h3>
       <p class="produto_descricao">${produto.descricao}</p>
       <span class="preco">R$ ${produto.preco}</span>
