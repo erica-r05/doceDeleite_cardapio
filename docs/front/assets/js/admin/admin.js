@@ -9,7 +9,7 @@ if (!auth) {
 }
 document.getElementById("logout").addEventListener("click", () => {
   localStorage.removeItem("auth");
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 });
 
 //funções pra carregar a home administrativa
